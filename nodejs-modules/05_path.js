@@ -2,7 +2,7 @@ const path = require('path')
 
 function getPlatformPathDelimiter() {
   console.log(`DELIMITER ${path.delimiter}`)
-  //return path.delimiter
+  return path.delimiter
 }
 //getPlatformPathDelimiter()
 
@@ -11,7 +11,7 @@ function resolvePath() {
   console.log(
     `RESOLVE PATH: ${filePath}`
   )
-  //return filePath
+  return filePath
 }
 //resolvePath()
 
@@ -21,7 +21,7 @@ function joinPaths() {
     '/nodejs-modules',
     'hola.txt'
   ]
-  const filePath = path.join(__dirname,'..//','/nodejs-modules', 'hola.txt')
+  const filePath = path.join('..//','/nodejs-modules', 'hola.txt')
   //const filePath = path.join(/* utilizar spread */)
   console.log(
     `JOIN PATH: ${filePath}`
@@ -43,7 +43,7 @@ function dirnamePath() {
     `GET DIRNAME FROM PATH ${pathDirname}`
   )
 
-  return
+  return pathDirname
 }
 //dirnamePath()
 
@@ -57,7 +57,7 @@ function getExtension() {
     `EXTENSION NAME FROM PATH ${fileExtension}`
   )
 
-  return
+  return fileExtension
 }
 //getExtension()
 
@@ -67,7 +67,7 @@ function normalizePath() {
   console.log(
     `NORMALIZE PATH ${normalizedPath}`
   )
-  return
+  return normalizedPath
 }
 //normalizePath()
 

@@ -37,12 +37,10 @@ console.log('CWD: ', process.cwd())
   1 significa salir con errores
 */
 
-throw new Error('Program failed')
-//process.exit(1)
-//process.exitCode = 1
+process.exitCode = 1
 
 /*
-  EVENTOS
+EVENTOS
 */
 
 //  The 'beforeExit' event is not emitted for conditions causing explicit termination, such as calling process.exit() or uncaught exceptions
@@ -54,3 +52,6 @@ process.on('beforeExit', (code) => {
 process.on('exit', (code) => {
   console.log(`Process exit event with code: ${code}`)
 })
+
+// process.exit(1)
+//throw new Error('Program failed')
