@@ -5,7 +5,7 @@ describe('spwan command execution',  () => {
   it('get data from git config command', async () => {
     const result = await getGitUserData()
     
-    expect(result).toMatch('Danilo P Catalan')
+    expect(result).toMatch('DaniloCatalan')
     expect(result).toMatch('danilo.e.catalan@gmail.com')
   })
   
